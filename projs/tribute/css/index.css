@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: grey;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+blockquote {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
