@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quote Machine</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="/projs/quoteMachine/js/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1>Random Chuck Norris machine</h1>
+
+            <div class="well">
+                <blockquote>
+                    <p id="newQuote"></p>
+                    <small>
+                        <cite id="newAuthor"></cite>
+                    </small>
+                </blockquote>
+                <p>
+                    <a class="btn btn-primary btn-lg" id="newQuoteButton">New quote!</a>
+                </p>
+
+                <a class="btn btn-primary btn" id="tweetButton" target="_blank" href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+
+
+            </div>
+
+
+            <table class="table table-striped table-hover " id="quotesTable">
+                <thead>
+                    <tr class="warning">
+                        <th>#</th>
+                        <th>Quote</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                    <!--
+                    <tr>
+                        <td>1</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
