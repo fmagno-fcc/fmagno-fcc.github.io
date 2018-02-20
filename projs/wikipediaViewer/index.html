@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipedia viewer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include local js -->
+    <script type="text/javascript" src="/projs/wikipediaViewer/js/index.js"></script>
+
+    <!-- Include local css -->
+    <link rel="stylesheet" href="/projs/wikipediaViewer/css/index.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Wikipedia pages viewer</h1>
+            <div class="form-group">
+                <label class="control-label" for="inputLarge"></label>
+                <input class="form-control input-lg" type="text" id="inputLarge" placeholder="Search here...">
+            </div>
+            <p>
+                <a id="buttonSearch" class="btn btn-primary btn-lg">Go</a>
+                <a id="buttonRandom" class="btn btn-warning btn">?</a>
+            </p>
+            <div id="results">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
