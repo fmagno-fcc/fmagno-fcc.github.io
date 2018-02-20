@@ -23,6 +23,7 @@ $(document).ready(() => {
 
 
 function searchPage() {
+    console.log("BEFORE CORS");
 
     var searchStr = $("#inputLarge").val();
 
@@ -35,8 +36,9 @@ function searchPage() {
     var pSearch = "list=search"
     var pSrSearch = "srsearch=" + encodeURIComponent(searchStr)
     // var pTitles = "titles=" + encodeURIComponent(searchStr)
+    var cors = "&origin=*"
 
-    var params = "?" + pAction + "&" + pProp + "&" + pRvprop + "&" + pFormat + "&" + pFormatVersion + "&" + pSearch + "&" + pSrSearch
+    var params = "?" + pAction + "&" + pProp + "&" + pRvprop + "&" + pFormat + "&" + pFormatVersion + "&" + pSearch + "&" + cors + "&" + pSrSearch
 
     // var params = "?action=query&prop=revisions&rvprop=content&format=json&formatversion=2&titles=" + encodeURIComponent(searchStr);
     // var urlSuffix = "&callback=?"
@@ -49,6 +51,7 @@ function searchPage() {
 
     // Clear results area
     $("#results").empty();
+
 
     // Fill in  the results area with the new results
     $.get(endpoint + params, (data) => {
@@ -71,4 +74,5 @@ function searchPage() {
 
         // console.log("PageID:", data.query.pages[0].pageid);
     });
+
 }
