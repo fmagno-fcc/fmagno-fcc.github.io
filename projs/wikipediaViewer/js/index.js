@@ -7,7 +7,6 @@ $(document).ready(() => {
 
     // Detect enter key on input text
     $("#inputLarge").on('keyup', function (e) {
-        console.log("Some keyboard button has been pressed!");
         if (e.keyCode == 13) {
             searchPage();
         }
@@ -15,7 +14,6 @@ $(document).ready(() => {
 
     // Detect search button press
     $("#buttonSearch").on("click", () => {
-        console.log("Search button pressed!");
         searchPage();
     });
 
@@ -23,7 +21,6 @@ $(document).ready(() => {
 
 
 function searchPage() {
-    console.log("BEFORE CORS");
 
     var searchStr = $("#inputLarge").val();
 
@@ -35,19 +32,9 @@ function searchPage() {
     var pFormatVersion = "formatversion=2"
     var pSearch = "list=search"
     var pSrSearch = "srsearch=" + encodeURIComponent(searchStr)
-    // var pTitles = "titles=" + encodeURIComponent(searchStr)
     var cors = "&origin=*"
 
     var params = "?" + pAction + "&" + pProp + "&" + pRvprop + "&" + pFormat + "&" + pFormatVersion + "&" + pSearch + "&" + cors + "&" + pSrSearch
-
-    // var params = "?action=query&prop=revisions&rvprop=content&format=json&formatversion=2&titles=" + encodeURIComponent(searchStr);
-    // var urlSuffix = "&callback=?"
-
-    console.log("URL:", endpoint + params);
-
-    // $.getJSON(endpoint + params, (data) => {
-    //     console.log(data);
-    // })
 
     // Clear results area
     $("#results").empty();
@@ -55,7 +42,6 @@ function searchPage() {
 
     // Fill in  the results area with the new results
     $.get(endpoint + params, (data) => {
-        console.log(data.query.search);
 
         data.query.search.forEach((elem) => {
             var title = elem.title
@@ -72,7 +58,6 @@ function searchPage() {
             $("#results").append(template);
         })
 
-        // console.log("PageID:", data.query.pages[0].pageid);
     });
 
 }
