@@ -1,0 +1,20 @@
+#canvas {
+    background-color: #000000;
+    padding: 25px 100px 25px 100px;
+}
+
+#frame {
+    background-color: #191919;
+}
+
+.top-buffer {
+    margin-top: 5px;
+}
+
+.bottom-buffer {
+    margin-bottom: 10px;
+}
+
+#dash-primary {
+    color: #ebe535;
+}
