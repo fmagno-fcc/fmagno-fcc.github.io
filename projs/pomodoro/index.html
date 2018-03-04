@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include local js -->
+    <script type="text/javascript" src="/projs/pomodoro/js/index.js"></script>
+
+    <!-- Include local css -->
+    <link rel="stylesheet" href="/projs/pomodoro/css/index.css">
+
+</head>
+
+<body>
+    <br>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Pomodoro Clock</h1>
+            <br>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-1 col-md-1 col-lg-1">
+                        <i id="playStop" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-xs-2 col-md-2 col-lg-2">
+                        <div class="form-group">
+                            <!-- <label class="control-label" for="focusedInput">Focused input</label> -->
+                            <input class="form-control text-center" id="timerTask" type="text" value="25">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-9 col-md-9 col-lg-9">
+                        <div id="progressFrame" class="progress">
+                            <div id="taskProgress" class="progress-bar progress-bar-success" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-1 col-md-1 col-lg-1">
+
+                    </div>
+
+                    <div class="col-xs-2 col-md-2 col-lg-2">
+                        <div class="form-group">
+                            <!-- <label class="control-label" for="focusedInput">Focused input</label> -->
+                            <input class="form-control text-center" id="timerBreak" type="text" value="5">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-9 col-md-9 col-lg-9">
+                        <div id="progressFrame" class="progress">
+                            <div id="breakProgress" class="progress-bar progress-bar-warning" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6">60</div>
+        <div class="col-xs-6 col-md-6 col-lg-6">60</div>
+        <div class="col-10">
+                        <div id="taskCountdown" class="progress">
+                            <div id="taskProgress" class="progress-bar progress-bar-success"></div>
+                        </div>
+                    </div>
+    </div> -->
+
+</body>
