@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/3/cyborg/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- bPopup -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include local js -->
+    <script type="text/javascript" src="/projs/tictactoe/js/index.js"></script>
+
+    <!-- Include local css -->
+    <link rel="stylesheet" href="/projs/tictactoe/css/index.css">
+
+    <!-- Include fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+</head>
+
+<body class="noselect">
+    <br>
+    <br>
+    <div class="container" align="center">
+        <h1>Tic Tac Toe</h1>
+        <h1 id="player1">P1: X</h1>
+        <h1 id="player2">P2: O</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="00" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="01" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="02" class="cell">_</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="10" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="11" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="12" class="cell">_</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="20" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="21" class="cell">_</div>
+                </td>
+                <td>
+                    <div id="22" class="cell">_</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="endGame" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Game Over!</h4>
+                </div>
+                <!-- <div class="modal-body">
+                    <p>One fine body…</p>
+                </div> -->
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+#player1 {
+    color: #353594;
+}
+
+#player2 {
+    color: #7d3535;
+}
+
+td {
+    border: 3px solid rgb(176, 176, 176);
+    height: 150px;
+    width: 200px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 150px;
+    /* display: none; */
+}
+
+.cell {
+    /* display: none; */
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+h4 {
+    text-align: center;
+}
