@@ -43,7 +43,7 @@ function getQuote() {
     var quoteStr = "QUOOOOOTE";
     var quoteAuthor = "UNKNOW";
 
-    $.getJSON("http://api.icndb.com/jokes/random?limitTo=[nerdy]", function (json) {
+    $.getJSON("https://api.icndb.com/jokes/random?limitTo=[nerdy]", function (json) {
         // JSON.stringify(json);
         quoteID = json.value.id;
         quoteStr = json.value.joke;
