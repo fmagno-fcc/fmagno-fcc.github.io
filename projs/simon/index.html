@@ -1,0 +1,73 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include local js -->
+    <script type="text/javascript" src="/projs/simon/js/index.js"></script>
+
+    <!-- Include local css -->
+    <link rel="stylesheet" href="/projs/simon/css/index.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Courgette|Nanum+Pen+Script|Pacifico|Poiret+One" rel="stylesheet">
+
+    <!-- Howlerjs -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.min.js"></script>
+
+
+</head>
+
+<body class="noselect">
+
+    <div class="container" align="center">
+        <h1>Simon Game</h1>
+        <table>
+            <tr>
+                <td id="green" align="center">G</td>
+                <td id="red" align="center">R</td>
+                <td id="count" align="center"></td>
+                <td id="strict" align="center"></td>
+            </tr>
+            <tr>
+                <td id="yellow" align="center">Y</td>
+                <td id="blue" align="center">B</td>
+                <td id="onOff" align="center"></td>
+                <td id="start" align="center">start</td>
+            </tr>
+        </table>
+        <h1 id="log"></h1>
+
+    </div>
+
+
+    <div id="endGame" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Game Over!</h4>
+                </div>
+                <!-- <div class="modal-body">
+                    <p>One fine body…</p>
+                </div> -->
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
